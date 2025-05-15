@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>GROUPE EXCEL</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header bg-primary text-white p-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="mb-0">GROUPE EXCEL</h1>
+            <nav class="nav">
+                <a class="nav-link text-white" href="#">Accueil</a>
+                <a class="nav-link text-white" href="#">Santé</a>
+                <a class="nav-link text-white" href="#">Média</a>
+                <a class="nav-link text-white" href="#">BTP</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container my-4">
+        <div class="img mb-4">
+            <img src="Screenshot (46).png" alt="Main Image" class="img-fluid">
+        </div>
+
+
+        <div class="row">
+            <!-- Vertical Menu -->
+            <div class="col-md-3 d-flex align-items-center">
+                <nav class="nav flex-column text-center text-md-start">
+                    <a href="#" class="nav-link h5" onclick="opensante()">Santé</a>
+                    <a href="#" class="nav-link h5" onclick="openmedia()">Média</a>
+                    <a href="#" class="nav-link h5" onclick="openbtp()">BTP</a>
+                </nav>
+            </div>
+
+            <!-- Content Section -->
+            <div class="col-md-9">
+                <!-- Santé Section -->
+                <div id="sante">
+                    <h2 class="text-center">Santé</h2>
+                    <div class="row text-center">
+                        <div class="col-4">
+                            <img src="Screenshot (46).png" class="img-thumbnail" alt="filiere1">
+                            <h5>Filiere1</h5>
+                        </div>
+                        <div class="col-4">
+                            <img src="Screenshot (46).png" class="img-thumbnail" alt="filiere2">
+                            <h5>Filiere2</h5>
+                        </div>
+                        <div class="col-4">
+                            <img src="Screenshot (46).png" class="img-thumbnail" alt="filiere3">
+                            <h5>Filiere3</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Media Section -->
+                <div id="media">
+                    <h2 class="text-center">Média</h2>
+                    <div class="row text-center">
+                        <div class="col-4">
+                            <img src="Screenshot (46).png" class="img-thumbnail" alt="filiere1">
+                            <h5>Filiere1</h5>
+                        </div>
+                        <div class="col-4">
+                            <img src="Screenshot (46).png" class="img-thumbnail" alt="filiere2">
+                            <h5>Filiere2</h5>
+                        </div>
+                        <div class="col-4">
+                            <img src="Screenshot (46).png" class="img-thumbnail" alt="filiere3">
+                            <h5>Filiere3</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BTP Section -->
+                <div id="btp">
+                    <h2 class="text-center">BTP</h2>
+                    <div class="row text-center">
+                        <div class="col-4">
+                            <img src="Screenshot (46).png" class="img-thumbnail" alt="filiere1">
+                            <h5>Filiere1</h5>
+                        </div>
+                        <div class="col-4">
+                            <img src="Screenshot (46).png" class="img-thumbnail" alt="filiere2">
+                            <h5>Filiere2</h5>
+                        </div>
+                        <div class="col-4">
+                            <img src="Screenshot (46).png" class="img-thumbnail" alt="filiere3">
+                            <h5>Filiere3</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-primary text-white text-center py-3">
+        <h3>GROUPE EXCEL 2024</h3>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function opensante() {
+            document.getElementById("sante").style.display = "block";
+            document.getElementById("media").style.display = "none";
+            document.getElementById("btp").style.display = "none";
+        }
+
+        function openmedia() {
+            document.getElementById("sante").style.display = "none";
+            document.getElementById("media").style.display = "block";
+            document.getElementById("btp").style.display = "none";
+        }
+
+        function openbtp() {
+            document.getElementById("sante").style.display = "none";
+            document.getElementById("media").style.display = "none";
+            document.getElementById("btp").style.display = "block";
+        }
+    </script>
+</body>
+</html>
